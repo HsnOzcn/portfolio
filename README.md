@@ -5,6 +5,8 @@ Bu projede hem kendimi tanıttığım bir **portföy**, hem de geliştirdiğim m
 
 ---
 
+👉 [Canlı Portföyü Görüntüle](https://hsnozcn.github.io/portfolio/)
+
 ## 📚 İçerik
 
 Bu projede yer alan mini uygulamalar:
