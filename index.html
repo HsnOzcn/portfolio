@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projelerim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="menuToggle">
+        <button id="menuButton" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+    <nav id="sideMenu">
+        <ul>
+            <li><a href="#anasayfa"><i class="fa-solid fa-house"></i> Anasayfa</a></li>
+            <li><a href="#harcamaTakip"><i class="fa-solid fa-money-bill-wave"></i> Harcama Takip</a></li>
+            <li><a href="#kitaplik"><i class="fa-solid fa-book"></i> Kitaplık</a></li>
+            <li><a href="#notDefteri"><i class="fa-solid fa-pen-to-square"></i> Not Defteri</a></li>
+            <li><a href="#workTracker"><i class="fa-solid fa-calendar-days"></i> Work Tracker</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="anasayfa" class="section">
+        <div class="start">
+            <div class="title">
+                <h1>Merhaba, Ben Hasan Özcan!</h1>
+                <p>Yeni teknolojilere meraklı, hızlı öğrenen, gelişmeye hevesli ve hayalim doğrultusunda büyük projelerde yer almayı hedefleyen birisiyim. Deneyim kazandıkça kendimi her projede bir adım ileriye taşıyorum.</p>
+            </div>
+            <div class="pic">
+                <img src="icons/3.jpg" alt="Hasan Özcan" id="img1">
+            </div>
+        </div>
+        <div class="aboutMe">
+            <p id="paragraf">Şu anda Açıköğretim üzerinden Web Tasarımı ve Programlama eğitimi alıyorum. Kişisel hedefim, backend ve frontend alanında uzmanlaşmak ve profesyonel projelerde yer alarak bu alanda kendimi geliştirmek. Bireysel olarak C# temeline sahibim. Ayrıca HTML, CSS ve CRUD operasyonları gibi konular üzerinde çalıştım ve bu alanlarda temel bilgim bulunmakta. 
+                Şu anda düzenli bir çalışma programı ile JavaScript ve modern frontend teknolojileri üzerine kendimi geliştiriyorum. Gelişime açık biriyim ve ekip içinde öğrenerek büyümeye çok hevesliyim.. CRUD işlemleri, LocalStorage kullanımı, responsive tasarım gibi konularda projeler ürettim. Aktif olarak portföyümü ve projelerimi geliştiriyor, her satır kodda daha fazla şey öğreniyorum. Git ve diğer teknolojilerle ilgili kaynaklar üzerinden hızlıca ilerliyorum. Bu sebeple, dinamik ve öğrenmeye açık bir pozisyon için ilanınızı büyük bir heyecanla inceledim. 
+                Eğer değerlendirme sürecinizde bana da şans verirseniz, hem sizinle birlikte büyümek hem de kendimi daha ileri taşıyarak büyük projelere birlikte adım atmayı çok isterim. Değerlendirmeniz için teşekkür eder, iyi çalışmalar dilerim. 
+            </p>
+        </div>
+    </section>
+
+    <section id="harcamaTakip" class="section">
+        <h2 id="expenseTitle">Harcama Takip Uygulaması</h2>
+      
+        <div class="expense-container">
+          <input type="text" id="expenseName" placeholder="Harcama Adı">
+          <input type="number" id="expenseAmount" placeholder="Tutar (TL)">
+          <button id="expBtn" onclick="addExpense()">Ekle</button>
+      
+          <ul id="expenseList"></ul>
+      
+          <p id="totalExpense">Toplam Harcama: 0 TL</p>
+        </div>
+      </section>
+      
+
+    <section id="kitaplik" class="section">
+        <h2 id="libTitle">Kitaplık Uygulaması</h2>
+
+        <div class="libraryContainer">
+        <input type="text" id="bookTitle" placeholder="Kitap Adı">
+        <input type="text" id="bookAuthor" placeholder="Yazar Adı">
+        <input type="text" id="pageCount" placeholder="Sayfa Sayısı">
+        <button id="libBtn" onclick="addBook()"><i class="fa-solid fa-plus"></i></button>
+        
+    </div>
+    <ul id="libraryList"></ul>
+    </section>
+
+    <section id="notDefteri" class="section">
+        <h2>Not Defteri Uygulaması</h2>
+        <div class="noteContainer">
+            <input type="text" id="noteTitle" placeholder="Not Başlığı">
+            <textarea name="" id="noteContent" placeholder="Not İçeriği"></textarea>
+            <button id="noteBtn" onclick="addNote()">Ekle</i></button>
+        </div>
+        <ul id="noteList"></ul>
+    </section>
+
+    <section id="workTracker" class="section">
+        <h2>Work Tracker Uygulaması</h2>
+        <div class="workTrackerContainer">
+            <input type="text" id="taskName" placeholder="Görev">
+            <input type="text" id="taskDay" placeholder="Görev Süresi">
+            <button id="taskBtn" onclick="addTask()"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <ul id="taskList"></ul>
+    </section>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
